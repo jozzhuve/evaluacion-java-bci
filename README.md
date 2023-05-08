@@ -1,35 +1,28 @@
-# technical-exercise-client
-Technical Exercise 
+### Acerca de la funcionalidad expuesta
+Crea un cliente en la base de datos.
 
-Microservicio basado en spring boot con documentacion swagger.
+### URI de acceso a la API
+| Método | URI             |
+|--------|-----------------|
+|POST| /api/v1/cliente |
 
-Endpoints disponibles:
-
-1- Crea un cliente en la base de datos.
-
-| Método | URI |
-|--------|-----|
-|POST|/api/cliente|
 
 ##### Trama Request
 
 ```javascript
 {
-    "name": "Juan",
-    "lastName": "Perez",
-    "age": "30",
-    "birthDate": "13/02/1988"
+    "name": "Juan Rodriguez",
+        "email": "juan@rodriguez.org",
+        "password": "hunter2",
+        "phones": [
+        {
+            "number": "1234567",
+            "citycode": "1",
+            "contrycode": "57"
+        }
+    ]
 }
 ```
+##### Estructura de base de datos
 
-2- Obtiene el promedio de edades de los clientes y la desviacion estandar.
-
-| Método | URI |
-|--------|-----|
-|GET|/api/cliente/kpi|
-
-3- Obtiene todos los clientes registrados con la fecha probable de muerte de cada uno de ellos
-
-| Método | URI |
-|--------|-----|
-|GET|/api/cliente|
+<img alt="img.png" src="https://github.com/jozzhuve/evaluacion-java-bci/blob/main/src/main/resources/images/img.png?raw=true">
