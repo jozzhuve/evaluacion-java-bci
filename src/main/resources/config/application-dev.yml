@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: client
+
+client:
+  app:
+    passwordRegexPattern: "[a-zA-Z]"
